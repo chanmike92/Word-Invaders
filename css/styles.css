@@ -29,16 +29,16 @@ body {
 }
 
 .game-field {
-  display: inline-block;
+  /*display: inline-block;*/
   border: 10px solid red;
-  /*display: flex;*/
+  display: inline-flex;
   width: auto;
   height: auto;
   background-color: white;
 }
 
 ul {
-  display: flex;
+  border: 1px solid black;
 }
 
 ul:after {
@@ -53,6 +53,7 @@ li {
   font-size: 30px;
   content: "asdfsdfgsdfg";
   text-overflow: ellipsis;
+  border-bottom: 1px solid blue;
   /*list-style: none;*/
 }
 
