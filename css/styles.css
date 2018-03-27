@@ -100,8 +100,7 @@ li {
 }
 
 a {
-  position:fixed;
   margin-left: 20px;
   margin-right: 20px;
-  z-index: 250;
+  z-index: 20;
 }
