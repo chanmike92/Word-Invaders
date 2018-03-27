@@ -65,8 +65,8 @@ li {
 }
 
 .input-box {
-  padding: 15px;
-  font-size: 40px;
+  padding: 10px;
+  font-size: 30px;
   align-items: center;
   text-align: center;
   background-color: white;
@@ -96,11 +96,28 @@ li {
   color: white;
   font-size: 30px;
   margin-bottom: 20px;
-  z-index: 15;
+  z-index: 5000;
 }
 
 a {
   margin-left: 20px;
   margin-right: 20px;
-  z-index: 20;
+  z-index: 6000;
+}
+
+.counter {
+  position: absolute;
+  color: white;
+}
+
+.fa-github-square {
+  color: white;
+}
+
+.fa-linkedin {
+  color: blue;
+}
+
+.fa-briefcase {
+  color: orange;
 }
