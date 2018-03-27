@@ -23,7 +23,8 @@ h1 {
 }
 
 body {
-  background-image: url(http://images.stopgame.ru/wallpapers/4643/space_invaders-8.jpg);
+  /*background-image: url(http://images.stopgame.ru/wallpapers/4643/space_invaders-8.jpg);*/
+  background-color: black;
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -53,7 +54,6 @@ li {
   width: 200px;
   height: 35px;
   font-size: 30px;
-  content: "asdfsdfgsdfg";
   text-overflow: ellipsis;
   /*border-bottom: 1px solid blue;*/
   /*list-style: none;*/
