@@ -5,16 +5,39 @@
     <title>Word-Invaders!</title>
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-database.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyABkXgv0DkLbigngaDgcu1JdpdS3M-cRfA",
+        authDomain: "word-invaders.firebaseapp.com",
+        databaseURL: "https://word-invaders.firebaseio.com",
+        projectId: "word-invaders",
+        storageBucket: "",
+        messagingSenderId: "418581910723"
+      };
+      firebase.initializeApp(config);
+    </script>
+
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="./lib/bundle.js"></script>
   </head>
   <body>
     <div class='title'>
+      <audio id="myAudio" loop>
+        <source src="./battle.wav" type="audio/wav">
+      </audio>
       <h1>Word-Invaders</h1>
       <div class='counter'></div>
       <div class='links'>
         <div>Made by Mike Chan</div>
+        <button class="audioplay playing" type="button">
+          <i class="fas fa-pause"></i>
+        </button>
         <a href="https://www.github.com/chanmike92"><i class='fab fa-github-square'></i></a>
         <a href='https://www.linkedin.com/in/chanmike92'><i class="fab fa-linkedin"></i></a>
         <a href='https://www.mikechan.me'><i class="fas fa-briefcase"></i></a>
@@ -35,7 +58,6 @@
     <form class='input-form'>
       <input autofocus class='input-box' type='text'>
     </form>
-
 
   </body>
 </html>
