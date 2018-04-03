@@ -1,0 +1,30 @@
+{
+  "name": "Word-Invaders",
+  "version": "1.0.0",
+  "description": "Word Invaders",
+  "main": "webpack.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "webpack": "^4.4.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^2.0.13"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --watch --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chanmike92/Word-Invaders.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chanmike92/Word-Invaders/issues"
+  },
+  "homepage": "https://github.com/chanmike92/Word-Invaders#readme"
+}

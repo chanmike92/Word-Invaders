@@ -4,6 +4,11 @@ html, body, figure, figcaption, ul, li, h1 {
   border: 0;
   font: inherit;
   text-align: inherit;
+
+}
+
+html {
+    height: 100vh;
 }
 
 ul {
@@ -23,21 +28,23 @@ h1 {
 }
 
 body {
-  /*background-image: url(http://images.stopgame.ru/wallpapers/4643/space_invaders-8.jpg);*/
-  background-color: black;
-  background-size: cover;
+  /* background-image: url(http://images.stopgame.ru/wallpapers/4643/space_invaders-8.jpg); */
+  background: #00F260;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: stretch;
   width: 100%;
   height: 100%;
-  z-index: 10;
 }
 
 .game-field {
   /*display: inline-block;*/
-  border: 10px solid red;
+  border: 10px solid navy;
   display: inline-flex;
   width: auto;
   height: auto;
-  background-color: white;
+  background-color: black;
+  color: white;
 }
 
 ul {
@@ -74,11 +81,12 @@ li {
 }
 
 .instructions {
-  border: 10px solid red;
+  border: 10px solid navy;
   display: inline-flex;
   width: 1200px;
   height: 490px;
-  background-color: white;
+  background-color: black;
+  color: white;
   font-size: 40px;
   justify-content: center;
   align-items: center;
@@ -93,10 +101,11 @@ li {
 }
 
 .links {
-  color: white;
+  color: navy;
   font-size: 30px;
   margin-bottom: 20px;
   z-index: 5000;
+  font-weight: 200;
 }
 
 a {
@@ -120,4 +129,10 @@ a {
 
 .fa-briefcase {
   color: orange;
+}
+
+.audioplay {
+  background: none;
+  border: none;
+  font-size: 20px;
 }
